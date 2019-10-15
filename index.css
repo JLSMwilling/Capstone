@@ -1,0 +1,175 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+                                                     /* HOME PAGE START */
+.welcomebanner {
+    width: 100%;
+    background-color: rgb(12, 105, 128);
+    display: flex;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+#top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#top-nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(56, 174, 255);
+    border: solid rgb(56, 174, 255) 0.05em;
+    border-radius: 0.2em;
+    padding: 0.5rem;
+}
+
+#top-nav a:hover {
+    cursor: pointer;
+    border: solid rgb(56, 174, 255) 0.05rem;
+    color: rgb(255, 145, 76);
+}
+
+
+#greetings-title {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: rgb(56, 174, 255);
+}
+
+#greetings {
+    color: rgb(56, 174, 255);
+    text-indent: 1rem;
+    margin: 0 30%;
+}
+
+#browse-our-inventory {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.greetings-btn {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(56, 174, 255);
+    border: solid rgb(56, 174, 255) 0.05em;
+    border-radius: 0.2em;
+    padding: 0.5rem;
+}
+.greetings-btn:hover {
+    background-color: rgb(56, 174, 255);
+    cursor: pointer;
+    border: solid rgb(56, 174, 255) 0.05rem;
+    color: rgb(12, 105, 128);
+    text-decoration: none;
+}
+
+article {
+    background-color: rgb(12, 105, 128);
+}
+
+footer nav {
+    background-color: rgb(255, 145, 76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+
+footer nav a {
+    color: rgb(12, 105, 128);
+}
+
+
+
+.p-animation {
+    position: absolute;
+    color: transparent;
+    transform: translate(40%, -1000%);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: rgb(74, 183, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0), -2px -2px 4px rgb(0, 0, 0), 2px -2px 4px rgb(0, 0, 0), -2px 2px 4px rgb(0, 0, 0);
+    z-index: -1;
+}
+
+.p-animation::before {
+    animation: typing 5.4s linear infinite;
+    position: absolute;
+    content: attr(data-text);
+    white-space: nowrap;
+    color: rgb(255, 127, 47);
+    overflow: hidden;
+    z-index: 2;
+}
+
+#make-it-yours {
+    transform: translate(-5%, -1000%);
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+                                             /* HOME PAGE END */
+
+                                              /* SHOP YOUR DREAM CAR START */
+
+                                 
+#hamburger-menu li{
+width: 10%;
+height:30%;
+background-color: rgb(255, 127, 47);
+white-space: nowrap;
+opacity: .8;
+text-align: center;
+cursor: pointer;
+}                                          
+
+#hamburger-menu a{
+    text-decoration: none;
+    color: rgb(12, 105, 128);
+    display: block;
+    text-align: center;
+}
+#hamburger-menu a:hover{
+   color: rgb(79, 216, 250);
+}
+#hamburger-menu ul li ul li{
+  display: none;
+  text-align: center;
+}
+#hamburger-menu ul li:hover ul li{
+  display:block;
+}
+
+section#results {
+    --max-card-width: 25em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, var(--max-card-width)));
+    grid-auto-flow: row;
+    grid-gap: 1em;
+    justify-content: space-evenly;
+  }
+
+  /* #flex{
+      display: flex;
+      align-content: center;
+  } */

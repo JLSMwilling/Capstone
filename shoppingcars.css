@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hamburger-menu li {
+  width: 10%;
+  height: 30%;
+  background-color: rgb(255, 127, 47);
+  white-space: nowrap;
+  opacity: .8;
+  text-align: center;
+  cursor: pointer;
+}
+
+#hamburger-menu a {
+  text-decoration: none;
+  color: rgb(12, 105, 128);
+  display: block;
+  text-align: center;
+}
+
+#hamburger-menu a:hover {
+  color: rgb(79, 216, 250);
+}
+
+#hamburger-menu ul li ul li {
+  display: none;
+  text-align: center;
+}
+
+#hamburger-menu ul li:hover ul li {
+  display: block;
+}
+
+section#results {
+  --max-card-width: 20em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, var(--max-card-width)));
+  grid-auto-flow: row;
+  grid-gap: 1em;
+  justify-content: space-evenly;
+}
+
+html,
+main {
+  background-color: rgb(255, 145, 76);
+}
+
+#results a {
+  text-decoration: none;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  padding-top: 1rem;
+}
+
+#flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.filters,
+#font {
+  font-family: 'Courgette', cursive, 'Courier New', Courier, monospace;
+}
+
+.filters{
+  color: rgb(255, 145, 76);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-weight: bold;
+  background-image: linear-gradient(to top left, rgb(12, 105, 128), rgb(56, 174, 255), rgb(255, 145, 76), rgb(12, 105, 128), rgb(56, 174, 255), rgb(255, 145, 76));
+}
+
+#filter-btn{
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-family: 'Courgette', cursive, 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: rgb(255, 145, 76);
+  background-image: linear-gradient(to top left, rgb(12, 105, 128), rgb(56, 174, 255), rgb(255, 145, 76), rgb(12, 105, 128), rgb(56, 174, 255), rgb(255, 145, 76));
+}
+
+#font {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#search-bar {
+  width: 40rem;
+}
+
+.search-flex a:hover {
+  cursor: pointer;
+  border: solid 0.05rem rgb(56, 174, 255);
+  color: rgb(255, 145, 76);
+}
+
+.search-flex a {
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 0.2em;
+  padding: 0.5rem;
+  color: rgb(56, 174, 255);
+
+}
+
+.nav-bar {
+  background-color: rgb(12, 105, 128);
+}
+
+i {
+  color: rgb(56, 174, 255);
+}
+
+i:hover {
+  color: rgb(255, 145, 76);
+}
